@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"example.com/username/pokeapi"
-	"example.com/username/pokecache"
+	"github.com/Victor-AvestaAI/pokedex/pokeapi"
+	"github.com/Victor-AvestaAI/pokedex/pokecache"
 )
 
 var cache pokecache.Cache
