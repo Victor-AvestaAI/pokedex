@@ -69,11 +69,11 @@ func commandExit(config *config) error {
 }
 
 func commandMap(config *config) error {
-
 	locs, err := config.pokeapiClient.GetLocations(config.next)
 	if err != nil {
 		return err
 	}
+
 	config.next = locs.Next
 	config.prev = locs.Previous
 
@@ -115,8 +115,6 @@ func cleanInput(text string) []string {
 func main() {
 
 	fmt.Println(cache)
-
-	pokeapi.Hello()
 
 	scanner := bufio.NewScanner(os.Stdin)
 

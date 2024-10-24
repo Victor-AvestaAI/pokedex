@@ -2,7 +2,6 @@ package pokeapi
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"time"
 )
@@ -51,9 +50,6 @@ func (c *Client) GetLocations(url *string) (Locations, error) {
 	if err != nil {
 		return Locations{}, err
 	}
-	return locs, nil
-}
 
-func Hello() {
-	fmt.Println("hello world")
+	return locs, nil
 }
