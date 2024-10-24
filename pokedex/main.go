@@ -116,7 +116,7 @@ func main() {
 
 	fmt.Println(cache)
 
-	pokeapi.hello()
+	pokeapi.Hello()
 
 	scanner := bufio.NewScanner(os.Stdin)
 
