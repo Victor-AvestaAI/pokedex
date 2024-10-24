@@ -51,8 +51,9 @@ func (c *Client) GetLocations(url *string) (Locations, error) {
 	if err != nil {
 		return Locations{}, err
 	}
-
-	fmt.Println("hello world")
-
 	return locs, nil
+}
+
+func Hello() {
+	fmt.Println("hello world")
 }
