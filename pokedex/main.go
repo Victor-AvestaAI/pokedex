@@ -116,6 +116,8 @@ func main() {
 
 	fmt.Println(cache)
 
+	pokeapi.hello()
+
 	scanner := bufio.NewScanner(os.Stdin)
 
 	pokeClient := pokeapi.NewClient(5 * time.Second)
